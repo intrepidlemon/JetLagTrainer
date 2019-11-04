@@ -1,0 +1,107 @@
+@import "../../css/components/variables";
+html body {
+  background: #261C2B !important;
+  font-family: 'Open Sans', sans-serif;
+
+  #nav {
+    #logo_border {
+      h1 {
+        color: #829D8F !important; 
+      }
+      .line {
+        stroke: #226468 !important;
+      }
+    }
+  }
+
+  h2 {
+    width: auto;
+    height: 200px;
+    margin: 0 auto;
+    background: url(assets/logoWithName.svg) no-repeat center;
+    background-size: contain;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    @media #{$small-and-down} {
+       background: url(assets/logoWithNameSmall.svg) no-repeat center;
+    }
+  }
+  p {
+    font-weight: 300;
+  }
+  .date {
+    display: none;
+  }
+  .back {
+    display: none;
+  }
+
+  .screenshot:after {
+    content: "";
+    display:block;
+    padding-bottom: 185%; 
+  }
+
+  #home-screen, #introduction {
+    opacity: 0;
+  }
+
+  .screenshot {
+    width: 100%;
+    display:inline-block; 
+    position:relative;
+    margin-bottom: -1%;
+    .marvel-device.nexus5 {
+      width: 90%; 
+      height: 90%;
+      position: absolute; 
+      top: 0; 
+      bottom: 0; 
+      right: 0; 
+      left: 0;
+      display: block;
+      background: #222;
+      .top-bar {
+        background: #000;
+      }
+      .screen {
+        position: relative; 
+        img {
+          width: 100%;
+        }
+        img.hidden { 
+          position:absolute; 
+          top: 0; 
+          bottom: 0; 
+          right: 0; 
+          left: 0;
+          opacity: 0;
+          transition: opacity .25s ease-in-out;
+         -moz-transition: opacity .25s ease-in-out;
+         -webkit-transition: opacity .25s ease-in-out;
+        }
+        img.hidden:hover, img.hidden:focus {
+          opacity: 1; 
+        }
+      }
+    }
+  }
+
+  #overview, #download {
+    padding-top: 2rem; 
+    margin-top: 2rem;
+    background: #226468;
+  }
+
+#download {
+  padding-bottom: 2rem;
+}
+  #input {
+    h3 {
+      margin-bottom: 40px; 
+
+    }
+  }
+}
+

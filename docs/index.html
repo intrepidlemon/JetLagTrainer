@@ -1,0 +1,171 @@
+
+<html>
+  <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/base.min.css" media="screen,projection"/>
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Mono:100,300,100italic,300italic,400italic,700italic,700" rel="stylesheet" type="text/css"/>
+        <link href="http://fonts.googleapis.com/css?family=Neuton:200,300,400,700,400italic" rel="stylesheet" type="text/css"/>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+        <script src="js/main.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script type="text/javascript">
+          (function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+          for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+          mixpanel.init("d2bddaad558139cb29cd4b91e3616b6c");
+        </script><svg width="0px" height="0px">
+    <defs>
+        <symbol id="line">
+			<path d="M0,0 L240,0"/>
+		</symbol>
+		<symbol id="parallelogram"> 
+			<path d="M0,0 L240,0 L360,207.846 L120,207.846 Z"/>
+		</symbol>
+	</defs>
+</svg>
+    <title>Sleep Shift: Beat jet lag!</title>
+    <link type="text/css" rel="stylesheet" href="./style.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./css/devices.min.css"/>
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600"/>
+    <script type="text/javascript" src="./js/scrollFireEvents.js"></script>
+  </head>
+  <body>
+        <div id="nav">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m7 l7"><a id="logo_border" href="https://iantoxi.com">
+                  <svg preserveAspectRatio="xMidYMin slice" viewBox="0 0 500 500">
+                    <use xlink:href="#line" transform="translate(42.154 370), rotate(-90)" class="line"></use>
+                    <use xlink:href="#line" transform="translate(42.154 130), rotate(-30)" class="line"></use>
+                    <use xlink:href="#line" transform="translate(250 10), rotate(30)" class="line"></use>
+                    <use xlink:href="#line" transform="translate(457.846 130), rotate(90)" class="line"></use>
+                    <use xlink:href="#line" transform="translate(457.846 370), rotate(150)" class="line"></use>
+                    <use xlink:href="#line" transform="translate(250 490), rotate(210)" class="line"></use>
+                  </svg>
+                  <h1>IANTO XI</h1></a></div>
+            </div>
+          </div>
+        </div>
+    <div class="container">
+      <h2>Sleep Shift</h2>
+      <div class="date">18 August 2015</div>
+    </div>
+    <div id="overview">
+      <div class="container">
+        <div class="row">
+          <div id="home-screen" class="col s12 m6 l5">
+            <div class="screenshot">
+              <div class="marvel-device nexus5">
+                <div class="top-bar"></div>
+                <div class="sleep"></div>
+                <div class="volume"></div>
+                <div class="screen"><img src="assets/home.png" alt="home screen"/></div>
+              </div>
+            </div>
+          </div>
+          <div id="introduction" class="col s12 m6 l7">
+            <h3>Beat jet lag! </h3>
+            <p>Sleep Shift is an android application developed as a part of a semester long project in CS160: User Interface Design at UC Berkeley. This application is designed to help users intelligently schedule their sleep times to adjust their circadian rhythms to a new timezone. </p>
+            <p>People who worked on this application include David Ju, Tatiana Ferreyra, Josef Nunez, and myself. </p>
+            <p>My main focus in this project was designing and implementing the <a href="#input">input interfaces</a>, and the <a href="#schedule">schedule</a>, as well as developing backend application logic. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="input">
+      <div class="container">
+        <h3>Input Interface</h3>
+        <div class="row">
+          <div class="col s12 m6 l4">
+            <div class="screenshot">
+              <div class="marvel-device nexus5">
+                <div class="top-bar"></div>
+                <div class="sleep"></div>
+                <div class="volume"></div>
+                <div class="screen"><img src="assets/location1.png" alt="home screen"/><img src="assets/location2.png" alt="home screen" class="hidden"/></div>
+              </div>
+            </div>
+            <h4>Time Zone</h4>
+            <p>To query users' origin and destination time zones, we use Google's PlacePicker. </p>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="screenshot">
+              <div class="marvel-device nexus5">
+                <div class="top-bar"></div>
+                <div class="sleep"></div>
+                <div class="volume"></div>
+                <div class="screen"><img src="assets/time1.png" alt="home screen"/><img src="assets/time2.png" alt="home screen" class="hidden"/></div>
+              </div>
+            </div>
+            <h4>Sleep Time</h4>
+            <p>To get a sense of when users sleep, we ask users to input their sleep time and wake time using Google's TimePicker dialog. </p>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="screenshot">
+              <div class="marvel-device nexus5">
+                <div class="top-bar"></div>
+                <div class="sleep"></div>
+                <div class="volume"></div>
+                <div class="screen"><img src="assets/strategy1.png" alt="home screen"/><img src="assets/strategy2.png" alt="home screen" class="hidden"/></div>
+              </div>
+            </div>
+            <h4>Strategies</h4>
+            <p>Our app can also help users schedule melatonin intake and can use a smartwatch's light sensor to monitor surrounding ambient light. Users can hold a selection to find out more information about these options.</p>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="screenshot">
+              <div class="marvel-device nexus5">
+                <div class="top-bar"></div>
+                <div class="sleep"></div>
+                <div class="volume"></div>
+                <div class="screen"><img src="assets/summary.png" alt="home screen"/></div>
+              </div>
+            </div>
+            <h4>Summary</h4>
+            <p>A simple summary of the user's inputted options. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="schedule">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6 l7">
+            <h3>Schedules</h3>
+            <p>Schedules are the main core of Sleep Shift. A schedule plots out key events in a user's transition from one time zone to the next. Each night, Sleep Shift offers advice about the optimal sleep time and when to take melatonin so that it is most biologically viable. Sleep Shift also uses a smartwatch's ambient light sensor to monitor a user's surrounding light and to notify users if they are in an environment that may make sleeping at the right time more difficult.</p>
+            <p>Sleep periods are represented in graph form. Each night, Sleep Shift plots a user's sleep period in their destination time zone in yellow, and their scheduled sleep period in blue. As the sleep plan progresses, users can see that the two schedules come together and visually overlap. </p>
+          </div>
+          <div class="col s12 m6 l5">
+            <div class="screenshot">
+              <div class="marvel-device nexus5">
+                <div class="top-bar"></div>
+                <div class="sleep"></div>
+                <div class="volume"></div>
+                <div class="screen"><img src="assets/night1.png" alt="home screen"/><img src="assets/night3.png" alt="home screen" class="hidden"/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="download">
+      <div class="container">
+        <h3>Download</h3>
+        <p>You can check out the <a href="https://github.com/intrepidlemon/SleepShift">github repository</a></p>
+      </div>
+    </div>
+        <script src="lib/prism/prism.js"></script>
+        <script type="text/javascript">mixpanel.track_links("nav a", "click nav link", {"referrer": document.referrer});</script>
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('require', 'displayfeatures');
+            ga('create', 'UA-4839646-5', 'auto');
+            ga('send', 'pageview');
+        </script>
+  </body>
+</html>
